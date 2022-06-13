@@ -36,6 +36,7 @@ public class Main extends Application {
     String green = "-fx-background-color:#32CD32";
 
     String[] btn = {"r1c1","r1c2","r1c3","r1c4","r1c5","r1c6","r1c7","r1c8","r1c9","r1c10","r2c1","r2c2","r2c3","r2c4","r2c5","r2c6","r2c7","r2c8","r2c9","r2c10","r4c1","r4c2","r4c3","r4c4","r4c5","r4c6","r4c7","r4c8","r5c1","r5c2","r5c3","r5c4","r5c5","r5c6","r5c7","r5c8","r5c9","r5c10","r6c1","r6c2","r6c3","r6c4","r6c5","r6c6","r6c7","r6c8","r6c9","r6c10","r7c1","r7c2","r7c3","r7c4","r7c5","r7c6","r7c7","r7c8","r7c9","r7c10","r8c1","r8c2","r8c3","r8c4","r8c5","r8c6","r8c7","r8c8","r8c9","r8c10","r9c1","r9c2","r9c3","r9c4","r9c5","r9c6","r9c7","r9c8","r9c9","r9c10","r10c3","r10c4","r10c5","r10c6","r10c7","r10c8"};
+
     String[] btn_clr = {grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey,grey};
     Button[] all_btn = {r1c1,r1c2,r1c3,r1c4,r1c5,r1c6,r1c7,r1c8,r1c9,r1c10,r2c1,r2c2,r2c3,r2c4,r2c5,r2c6,r2c7,r2c8,r2c9,r2c10,r4c1,r4c2,r4c3,r4c4,r4c5,r4c6,r4c7,r4c8,r5c1,r5c2,r5c3,r5c4,r5c5,r5c6,r5c7,r5c8,r5c9,r5c10,r6c1,r6c2,r6c3,r6c4,r6c5,r6c6,r6c7,r6c8,r6c9,r6c10,r7c1,r7c2,r7c3,r7c4,r7c5,r7c6,r7c7,r7c8,r7c9,r7c10,r8c1,r8c2,r8c3,r8c4,r8c5,r8c6,r8c7,r8c8,r8c9,r8c10,r9c1,r9c2,r9c3,r9c4,r9c5,r9c6,r9c7,r9c8,r9c9,r9c10,r10c3,r10c4,r10c5,r10c6,r10c7,r10c8};
     Button[] selected_btn = new Button[84];
@@ -233,90 +234,11 @@ public class Main extends Application {
         vb1.getChildren().addAll(scn,hb1,hb2,hb3,hb4,hb5,hb6,hb7,hb8,hb9,hb10);
 
         //event handling to buttons
-        all_btn[0].setOnAction(e->setDisplay(all_btn[0],0));
-        all_btn[1].setOnAction(e->setDisplay(all_btn[1],1));
-        all_btn[2].setOnAction(e->setDisplay(all_btn[2],2));
-        all_btn[3].setOnAction(e->setDisplay(all_btn[3],3));
-        all_btn[4].setOnAction(e->setDisplay(all_btn[4],4));
-        all_btn[5].setOnAction(e->setDisplay(all_btn[5],5));
-        all_btn[6].setOnAction(e->setDisplay(all_btn[6],6));
-        all_btn[7].setOnAction(e->setDisplay(all_btn[7],7));
-        all_btn[8].setOnAction(e->setDisplay(all_btn[8],8));
-        all_btn[9].setOnAction(e->setDisplay(all_btn[9],9));
-        all_btn[10].setOnAction(e->setDisplay(all_btn[10],10));
-        all_btn[11].setOnAction(e->setDisplay(all_btn[11],11));
-        all_btn[12].setOnAction(e->setDisplay(all_btn[12],12));
-        all_btn[13].setOnAction(e->setDisplay(all_btn[13],13));
-        all_btn[14].setOnAction(e->setDisplay(all_btn[14],14));
-        all_btn[15].setOnAction(e->setDisplay(all_btn[15],15));
-        all_btn[16].setOnAction(e->setDisplay(all_btn[16],16));
-        all_btn[17].setOnAction(e->setDisplay(all_btn[17],17));
-        all_btn[18].setOnAction(e->setDisplay(all_btn[18],18));
-        all_btn[19].setOnAction(e->setDisplay(all_btn[19],19));
-        all_btn[20].setOnAction(e->setDisplay(all_btn[20],20));
-        all_btn[21].setOnAction(e->setDisplay(all_btn[21],21));
-        all_btn[22].setOnAction(e->setDisplay(all_btn[22],22));
-        all_btn[23].setOnAction(e->setDisplay(all_btn[23],23));
-        all_btn[24].setOnAction(e->setDisplay(all_btn[24],24));
-        all_btn[25].setOnAction(e->setDisplay(all_btn[25],25));
-        all_btn[26].setOnAction(e->setDisplay(all_btn[26],26));
-        all_btn[27].setOnAction(e->setDisplay(all_btn[27],27));
-        all_btn[28].setOnAction(e->setDisplay(all_btn[28],28));
-        all_btn[29].setOnAction(e->setDisplay(all_btn[29],29));
-        all_btn[30].setOnAction(e->setDisplay(all_btn[30],30));
-        all_btn[31].setOnAction(e->setDisplay(all_btn[31],31));
-        all_btn[32].setOnAction(e->setDisplay(all_btn[32],32));
-        all_btn[33].setOnAction(e->setDisplay(all_btn[33],33));
-        all_btn[34].setOnAction(e->setDisplay(all_btn[34],34));
-        all_btn[35].setOnAction(e->setDisplay(all_btn[35],35));
-        all_btn[36].setOnAction(e->setDisplay(all_btn[36],36));
-        all_btn[37].setOnAction(e->setDisplay(all_btn[37],37));
-        all_btn[38].setOnAction(e->setDisplay(all_btn[38],38));
-        all_btn[39].setOnAction(e->setDisplay(all_btn[39],39));
-        all_btn[40].setOnAction(e->setDisplay(all_btn[40],40));
-        all_btn[41].setOnAction(e->setDisplay(all_btn[41],41));
-        all_btn[42].setOnAction(e->setDisplay(all_btn[42],42));
-        all_btn[43].setOnAction(e->setDisplay(all_btn[43],43));
-        all_btn[44].setOnAction(e->setDisplay(all_btn[44],44));
-        all_btn[45].setOnAction(e->setDisplay(all_btn[45],45));
-        all_btn[46].setOnAction(e->setDisplay(all_btn[46],46));
-        all_btn[47].setOnAction(e->setDisplay(all_btn[47],47));
-        all_btn[48].setOnAction(e->setDisplay(all_btn[48],48));
-        all_btn[49].setOnAction(e->setDisplay(all_btn[49],49));
-        all_btn[50].setOnAction(e->setDisplay(all_btn[50],50));
-        all_btn[51].setOnAction(e->setDisplay(all_btn[51],51));
-        all_btn[52].setOnAction(e->setDisplay(all_btn[52],52));
-        all_btn[53].setOnAction(e->setDisplay(all_btn[53],53));
-        all_btn[54].setOnAction(e->setDisplay(all_btn[54],54));
-        all_btn[55].setOnAction(e->setDisplay(all_btn[55],55));
-        all_btn[56].setOnAction(e->setDisplay(all_btn[56],56));
-        all_btn[57].setOnAction(e->setDisplay(all_btn[57],57));
-        all_btn[58].setOnAction(e->setDisplay(all_btn[58],58));
-        all_btn[59].setOnAction(e->setDisplay(all_btn[59],59));
-        all_btn[60].setOnAction(e->setDisplay(all_btn[60],60));
-        all_btn[61].setOnAction(e->setDisplay(all_btn[61],61));
-        all_btn[62].setOnAction(e->setDisplay(all_btn[62],62));
-        all_btn[63].setOnAction(e->setDisplay(all_btn[63],63));
-        all_btn[64].setOnAction(e->setDisplay(all_btn[64],64));
-        all_btn[65].setOnAction(e->setDisplay(all_btn[65],65));
-        all_btn[66].setOnAction(e->setDisplay(all_btn[66],66));
-        all_btn[67].setOnAction(e->setDisplay(all_btn[67],67));
-        all_btn[68].setOnAction(e->setDisplay(all_btn[68],68));
-        all_btn[69].setOnAction(e->setDisplay(all_btn[69],69));
-        all_btn[70].setOnAction(e->setDisplay(all_btn[70],70));
-        all_btn[71].setOnAction(e->setDisplay(all_btn[71],71));
-        all_btn[72].setOnAction(e->setDisplay(all_btn[72],72));
-        all_btn[73].setOnAction(e->setDisplay(all_btn[73],73));
-        all_btn[74].setOnAction(e->setDisplay(all_btn[74],74));
-        all_btn[75].setOnAction(e->setDisplay(all_btn[75],75));
-        all_btn[76].setOnAction(e->setDisplay(all_btn[76],76));
-        all_btn[77].setOnAction(e->setDisplay(all_btn[77],77));
-        all_btn[78].setOnAction(e->setDisplay(all_btn[78],78));
-        all_btn[79].setOnAction(e->setDisplay(all_btn[79],79));
-        all_btn[80].setOnAction(e->setDisplay(all_btn[80],80));
-        all_btn[81].setOnAction(e->setDisplay(all_btn[81],81));
-        all_btn[82].setOnAction(e->setDisplay(all_btn[82],82));
-        all_btn[83].setOnAction(e->setDisplay(all_btn[83],83));
+        for (int i=0 ; i<84;i++)
+        {
+            int finalI = i;
+            all_btn[i].setOnAction(e->setDisplay(all_btn[finalI], finalI));
+        }
 
         movie = new Label("Movie");
         movie.setFont(new Font("Verdana",14));
